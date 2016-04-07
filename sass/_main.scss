@@ -170,7 +170,19 @@
 			font-size: 29px;
 			line-height: 65px;
 		}
-
+	.small_link{
+		font-size: 11px;
+		display: block;
+		padding-top: 30px;
+	}
+	.pick{
+		display: block;
+		color: #77bb61;
+		font-size: 14px;
+		font-family: $fontfamily;
+		padding-left: 138px;
+		margin-top: 15px;
+	}
 /*----------end main----------*/	
 
 	
@@ -284,7 +296,7 @@
 	table{
 		width: 100%;
 		border-bottom: 1px solid #e5e5e5;
-		box-shadow: 1px 1px 1px red;
+		box-shadow: 1px 1px 1px #fff;
 	}
 	th{
 		background:#e9e9e9;
@@ -359,6 +371,9 @@ padding-top: 15px;
 		font-weight: 500;
 		padding-bottom: 35px;
 	}
+	article{
+		width: 700px;
+	}
 }
 /*----------------end--modal---------------*/
 
@@ -425,3 +440,106 @@ padding-top: 15px;
 	}
 }
 /*-----------------end-cabinet---------------*/
+
+/*-----------delivery-----------------*/
+.delivery_form{
+	background: none;
+	box-shadow: none;
+	table{
+		td{
+			vertical-align: top;
+			input.small{
+				width: 62px;
+				margin: 0 10px 0 0;
+			}
+		}
+		textarea{
+			vertical-align: top;
+			height: 193px;
+		}
+	}
+}
+
+.calend{
+	border-radius: 3px;
+	background: #e9e9e9;
+	box-shadow: 0 1px 2px rgba(0,0,0,.28);
+	box-sizing: border-box;
+	padding: 20px 70px;
+	width: 540px;
+	margin: auto;
+	margin-bottom: 45px;
+	position: relative;
+	.date{
+		display: block;
+		position: relative;
+	}
+	.datepick{
+		width: 100% !important;
+	}
+	.datepick-month{
+		float: none;
+		width: auto;
+	}
+	a.datepick-cmd{
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		left: 0;
+		width: 20px;
+		height: 40px;
+		margin-top: -20px;
+		@include hide-text;
+		background:transparent url('../img/slider_arrow.png') left top no-repeat;
+	}
+		a.datepick-cmd-prev{
+			left: -50px;
+		}
+		a.datepick-cmd-next{
+			left: auto;
+			right: -50px;
+			@include mirror_flip;
+		}
+		a.datepick-cmd-today{
+			display: none;
+		}
+	.datepick-month , .datepick-month *{
+		background: none !important;
+		border: none;
+		color: #000;
+		font-family: $fontfamily !important;
+		font-size: 16px;
+	}
+	.datepick{
+		background: none;
+		border: none;
+	}
+	.datepick-month-header{
+		text-align: left;
+		padding-left: 16px;
+		padding-bottom: 12px;
+	}
+	.datepick-month-header select{
+		width: auto;
+	}
+	.datepick-month th, .datepick-month th a{
+		font-weight: bold;
+	}
+	.datepick-month th{
+		padding-bottom: 10px
+	}
+	.datepick-month td a{
+		height: 32px;
+		width: 32px;
+		line-height: 32px;
+		display: inline-block;
+		padding: 0;
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.datepick-month td a.datepick-selected{
+		background:#8eb980 !important;
+	}
+}
+
+/*-------------end-delivery-----------*/
