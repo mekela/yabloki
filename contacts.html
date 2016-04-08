@@ -19,6 +19,8 @@
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/jquery.datepick.js"></script>
+			<script src="js/jquery.datepick.lang.min.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -53,35 +55,37 @@
 	
 	<div class="contacts_wrap">
 		<div class="registration_wrap">
+			<form id="form1" onsubmit='return false' autocomplete="off" >
 			<table>
 				<tr>
 					<td colspan="2" class="full_width">
 						<label><em>Компания*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Телефон*:</em></label>
-						<input type="text" class="error">
+						<input type="text"  class="validate">
 					</td>
 					<td>
 						<label><em>Контактное лицо*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
 						<label><em>Компания*:</em></label>
-						<textarea ></textarea>
+						<textarea  class="validate"></textarea>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center">
-						<button class="button">Отправить</button>
+						<button class="button" rel="form1">Отправить</button>
 					</td>
 				</tr>
-			</table>	
+			</table>
+			</form>	
 		</div>
 		<div class="attention_block">
 			<img src="img/attention.png" alt="">

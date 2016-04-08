@@ -58,48 +58,48 @@
 	</div>
 
 	<div class="registration_wrap delivery_form">
-		<form>
+		<form id="form1" onsubmit='return false' autocomplete="off" >
 			<table>
 				<tr>
 					<td>
 						<label><em>Название  организации*:</em></label>
-						<input type="text" >
+						<input type="text" class="validate">
 					</td>
 					<td rowspan="5" >
 						<label><em>Комментарии:</em></label>
-						<textarea></textarea>
+						<textarea  class="validate"></textarea>
 						<a href="#" class="pick">Прикрепить товарную накладную</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Адрес*:</em></label>
-						<input type="text" class="error">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Дата доставки*:</em></label>
-						<input type="text" id="linkedDay" class="small">
-						<input type="text" id="linkedMonth" class="small">
-						<input type="text" id="linkedYear" class="small">
+						<input type="text" id="linkedDay" class="small validate">
+						<input type="text" id="linkedMonth" class="small validate">
+						<input type="text" id="linkedYear" class="small validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Контактное лицо*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Телефон*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center">
-						<button class="button">Отправить</button>
+						<button class="button"  rel="form1">Отправить</button>
 					</td>
 				</tr>
 			</table>

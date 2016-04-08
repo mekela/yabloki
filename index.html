@@ -19,6 +19,8 @@
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/jquery.datepick.js"></script>
+			<script src="js/jquery.datepick.lang.min.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -37,7 +39,7 @@
 
 	<div class="registration_wrap">
 		<h5>Регистрация</h5>
-		<form>
+		<form id="form1" onsubmit='return false' autocomplete="off" >
 			<div class="registration_radio">
 				<label class="style_radio">
 					<input type="radio" name="radio"><i></i>
@@ -52,51 +54,51 @@
 				<tr>
 					<td>
 						<label><em>Компания*:</em></label>
-						<input type="text" class="error">
+						<input type="text" class="validate">
 					</td>
 					<td>
 						<label><em>К/с*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Юридический адрес*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 					<td>
 						<label><em>БИК*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Фактический адрес*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 					<td>
 						<label><em>Эл.адрес*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>ОГРН*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 					<td>
 						<label><em>Телефон*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>ИНН*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 					<td>
 						<label><em>Контактное лицо*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
@@ -106,31 +108,34 @@
 					</td>
 					<td>
 						<label><em>Пароль*:</em></label>
-						<input type="text">
+						<input type="password" class="validate" name="company2">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Номер счета*:</em></label>
-						<input type="text">
+						<input type="text" class="validate" name="company">
 					</td>
 					<td>
 						<label><em>Файл с товарами*:</em></label>
-						<input type="file">
+						<input type="file" >
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center capha">
 						<label><em>Введите код указаный на картинке*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 						<img src="img/capha.png" alt="">
 						<a href="#"><img src="img/refresh.png" alt=""></a>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center">
-						<button class="button">Регистрация</button>
+						<button class="button" rel="form1">Регистрация</button>
 						<a href="#agreement" class="fancybox small_link">соглашение о пользовании сайтом</a>
+						 <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+	                    <input type="hidden" name="action" value='send_form'/>
+	                    <input type="hidden" name="action_type" value='form_feedback'/>
 					</td>
 				</tr>
 			</table>
@@ -138,7 +143,7 @@
 	</div>
 	<div class="attention_block">
 		<img src="img/attention.png" alt="">
-			Вы не заполнили обязательные для заполнения поля: Компания, Контактное лицо, Пароль.
+			Вы не заполнили обязательные для заполнения поля
 	</div>
 	
 </div>
