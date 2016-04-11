@@ -144,6 +144,7 @@ $breaklarge: 1180px;
 //simple gradient
 @mixin linear-gradient($direction, $color-stops) {
   background: nth(nth($color-stops, 1), 1);
+  background: -moz-linear-gradient(legacy-direction($direction), $color-stops);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
 }
