@@ -16,6 +16,14 @@ $(document).ready(function() {
 	  prevText: '← Go back'
 	});
 
+	//input file 
+	$('.pick input').bind("change",function() { 
+
+	    var imgVal = $('.pick input').val(); 
+	     $('.pick_text').text(imgVal);             
+	    return false;
+    
+	});
 
 
 

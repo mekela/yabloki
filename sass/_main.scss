@@ -37,6 +37,13 @@
 				padding-bottom: 18px;
 				color: #565656;
 				font-size: 14px;
+				input.checkbox{
+					display: inline-block;
+					width: 15px;
+					height: 15px;
+					position: relative;
+					top: 4px;
+				}
 			}
 			label{
 				display: inline-block;
@@ -177,8 +184,8 @@
 		}
 	.small_link{
 		font-size: 11px;
-		display: block;
-		padding-top: 30px;
+		display: inline-block;
+		padding-top: 0px;
 	}
 	.pick{
 		display: block;
