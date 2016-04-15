@@ -41,16 +41,16 @@
 		<h5>Регистрация</h5>
 		<form id="form1" onsubmit='return false' autocomplete="off" >
 			<div class="registration_radio">
-				<label class="style_radio">
-					<input type="radio" name="radio"><i></i>
+				<label class="style_radio" id="to_tab1">
+					<input type="radio" checked name="radio"><i></i>
 					<span>Индивидуальный предприниматель</span>
 				</label>
-				<label class="style_radio">
+				<label class="style_radio"  id="to_tab2">
 					<input type="radio" name="radio"><i></i>
 					<span>Общество с ограниченной ответственностью</span>
 				</label>
 			</div>
-			<table>
+			<table id="tab1" class="tab">
 				<tr>
 					<td>
 						<label><em>Компания*:</em></label>
@@ -118,7 +118,142 @@
 					</td>
 					<td>
 						<label><em>Файл с товарами*:</em></label>
-						<input type="file" >
+						<small class="pick pick_main">
+							Прикрепить 
+							<input type="file">
+							<br>
+							<span class="pick_text">&nbsp;</span>
+						</small>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="text_center capha">
+						<label><em>Введите код указаный на картинке*:</em></label>
+						<input type="text" class="validate">
+						<img src="img/capha.png" alt="">
+						<a href="#"><img src="img/refresh.png" alt=""></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="text_center capha">
+						<input type="checkbox" class="checkbox">
+						<a href="#agreement" class="fancybox small_link"> Принять соглашение о пользовании сайтом</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="text_center">
+						<button class="button" rel="form1">Регистрация</button>
+						 <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+	                    <input type="hidden" name="action" value='send_form'/>
+	                    <input type="hidden" name="action_type" value='form_feedback'/>
+					</td>
+				</tr>
+			</table>
+
+			<table id="tab2" class="tab">
+				<tr>
+					<td>
+						<label><em>Полное наименование*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>Краткое наименование*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>Руководитель*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>Главный бухгалтер*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>КПП*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>К/с*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>ОКВЭД*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>ОКПО*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>Юридический адрес*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>БИК*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>Почтовый адрес*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>Эл.адрес*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>ОГРН*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>Телефон*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>ИНН*:</em></label>
+						<input type="text" class="validate">
+					</td>
+					<td>
+						<label><em>Контактное лицо*:</em></label>
+						<input type="text" class="validate">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>Наименование  банка:</em></label>
+						<input type="text">
+					</td>
+					<td>
+						<label><em>Пароль*:</em></label>
+						<input type="password" class="validate" name="company2">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label><em>Номер счета*:</em></label>
+						<input type="text" class="validate" name="company">
+					</td>
+					<td>
+						<label><em>Файл с товарами*:</em></label>
+						<small class="pick pick_main">
+							Прикрепить 
+							<input type="file">
+							<br>
+							<span class="pick_text">&nbsp;</span>
+						</small>
 					</td>
 				</tr>
 				<tr>

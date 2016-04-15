@@ -16,6 +16,16 @@ $(document).ready(function() {
 	  prevText: '← Go back'
 	});
 
+	//tab
+	$( "#to_tab1" ).click(function() {
+	  $( "#tab2" ).hide();
+	  $( "#tab1" ).show();
+	});
+	$( "#to_tab2" ).click(function() {
+	  $( "#tab1" ).hide();
+	  $( "#tab2" ).show();
+	});
+
 	//input file 
 	$('.pick input').bind("change",function() { 
 

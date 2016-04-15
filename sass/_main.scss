@@ -91,6 +91,13 @@
 			padding: 15px 0 22px 0;
 			text-align: center;
 		}
+		.tab{
+			display: none;
+		}
+		#tab1{
+			display: block;
+		}
+
 			.style_radio{
 				display: inline-block;
 				padding: 0 30px;
@@ -207,6 +214,12 @@
 			opacity: 0;
 		}
 	}
+		.pick_main{
+			margin-left: 0;
+			margin-top: 0px;
+			top: 17px;
+			display: inline-block;
+		}
 /*----------end main----------*/	
 
 	
@@ -279,10 +292,16 @@
 }
 .photo_filter{
 	padding-bottom: 23px;
-	a{
-		color: #8eb980;
-		padding: 0 17px 0 0;
+	select, input{
+		    color: #8eb980;
+		    padding: 0 0px 0 0;
+		    width: auto;
+		    background: none;
+		    border: none;
+		    height: auto;
+		    box-shadow: none;
 	}
+
 }
 .gallery{
 	font-size: 0;
