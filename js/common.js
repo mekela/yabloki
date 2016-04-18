@@ -67,6 +67,10 @@ $(document).ready(function() {
 	            $(this).focus();
 	            $(this).addClass('error');
 	            $('.attention_block').show();
+
+				//$(".checkbox").prop('checked').hide('.button');
+
+
 	        }else{
 	            $(this).removeClass('error');
 	             $('.attention_block').hide();
@@ -84,26 +88,5 @@ $(document).ready(function() {
 	    } 
 	});
 
-		//datepicker
 	
-	$.datepick.setDefaults($.datepick.regionalOptions['ru']);
-
-	
-
-	function updateLinked(dates) { 
-	    $('#linkedMonth').val(dates.length ? dates[0].getMonth() + 1 : ''); 
-	    $('#linkedDay').val(dates.length ? dates[0].getDate() : ''); 
-	    $('#linkedYear').val(dates.length ? dates[0].getFullYear() : ''); 
-	} 
-	 
-	$('.date').datepick({ 
-	    alignment: 'bottomRight', onSelect: updateLinked
-	 }); 
-	 
-	$('#linkedMonth,#linkedDay,#linkedYear').change(function() { 
-	    $('.date').datepick('setDate', new Date( 
-	        parseInt($('#linkedYear').val(), 10), 
-	        parseInt($('#linkedMonth').val(), 10) - 1, 
-	        parseInt($('#linkedDay').val(), 10))); 
-	});
 });

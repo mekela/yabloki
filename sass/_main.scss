@@ -218,7 +218,29 @@
 			margin-left: 0;
 			margin-top: 0px;
 			top: 17px;
+			width: 151px;
+			color: #565656;
 			display: inline-block;
+			vertical-align: top;
+			padding-bottom: 23px;
+			img{
+				position: absolute;
+				right: 0
+			}
+			.pick_text{
+				position: absolute;
+				top: 22px;
+    			left: 0;
+			}
+		}
+		.pick_main + a{
+			overflow: hidden;
+			color: #77bb61;
+			font-size: 12px;
+			display: inline-block;
+			position: relative;
+			top: 8px;
+			left: 10px;
 		}
 /*----------end main----------*/	
 
@@ -365,7 +387,7 @@
 		}
 		a{
 			color: #8eb980;
-			font-size: 13px;
+			font-size: 15px;
 			text-decoration: none;
 			font-weight: bold;
 			&:hover{

@@ -229,37 +229,37 @@
 <div id="modal_form" class="modal">
 	<h5>Сообщить о товаре</h5>
 	<div class="registration_wrap">
-		<form action="#">
+		<form id="form1" onsubmit='return false' autocomplete="off" >
 			<table>
 				<tr>
 					<td>
 						<label><em>Компания*:</em></label>
-						<input type="text" >
+						<input type="text" class="validate">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label><em>Телефон*:</em></label>
-						<input type="text" >
+						<input type="text" class="validate">
 					</td>
 					
 				</tr>
 				<tr>
 					<td>
 						<label><em>Контактное лицо*:</em></label>
-						<input type="text">
+						<input type="text" class="validate">
 					</td>
 					
 				</tr>
 				<tr>
 					<td>
 						<label><em>Магазин*:</em></label>
-						<input type="text" >
+						<input class="validate" type="text" >
 					</td>
 				</tr>
 				<tr>
 					<td class="text_center">
-						<button class="button">Отправить</button>
+						<button  class="button" rel="form1">Отправить</button>
 					</td>
 				</tr>
 			</table>		
