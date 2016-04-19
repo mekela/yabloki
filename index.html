@@ -37,7 +37,7 @@
 
 	<div class="registration_wrap">
 		<h5>Регистрация</h5>
-		<form id="form1" onsubmit='return false' autocomplete="off" >
+		
 			<div class="registration_radio">
 				<label class="style_radio" id="to_tab1">
 					<input type="radio" checked name="radio"><i></i>
@@ -48,6 +48,7 @@
 					<span>Общество с ограниченной ответственностью</span>
 				</label>
 			</div>
+		<form id="form1" onsubmit='return false' autocomplete="off" >	
 			<table id="tab1" class="tab">
 				<tr>
 					<td>
@@ -136,8 +137,11 @@
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center capha">
-						<input type="checkbox" class="checkbox">
+						 <input id="capcha2" type="checkbox" class="checkbox">
 						<a href="#agreement" class="fancybox small_link"> Принять соглашение о пользовании сайтом</a>
+						
+						<input id="caphahide2" class="validate" type="hidden">
+						<div id="nocapha2" style="color: red;">Вы не приняли соглашение<div> 
 					</td>
 				</tr>
 				<tr>
@@ -149,7 +153,8 @@
 					</td>
 				</tr>
 			</table>
-
+		</form>	
+		<form id="form2" onsubmit='return false' autocomplete="off" >
 			<table id="tab2" class="tab">
 				<tr>
 					<td>
@@ -268,13 +273,16 @@
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center capha">
-						<input type="checkbox"  class="validate checkbox">
+						 <input id="capcha" type="checkbox" class="checkbox">
 						<a href="#agreement" class="fancybox small_link"> Принять соглашение о пользовании сайтом</a>
+						
+						<input id="caphahide" class="validate" type="hidden">
+						<div id="nocapha" style="color: red;">Вы не приняли соглашение<div> 
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" class="text_center">
-						<button class="button" rel="form1">Регистрация</button>
+						<button class="button" rel="form2">Регистрация</button>
 						 <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
 	                    <input type="hidden" name="action" value='send_form'/>
 	                    <input type="hidden" name="action_type" value='form_feedback'/>

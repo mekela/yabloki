@@ -36,7 +36,27 @@ $(document).ready(function() {
 	});
 
 
+	$('#capcha').change(function(event) {
+		if ($(this).is(':checked')) {
+			$('#caphahide').val('checked');
+		} 
+		else {
+			$('#caphahide').val('');
+		}
+	});
+	$('#nocapha').hide(0);
 
+	$('#capcha2').change(function(event) {
+		if ($(this).is(':checked')) {
+			$('#caphahide2').val('checked');
+		} 
+		else {
+			$('#caphahide2').val('');
+		}
+	});
+	$('#nocapha2').hide(0);
+
+	
 	/* - - - - - - - - - - - - - -   valid  - - - - - - - - - - - - - - - - */
 	$('.text_center .button').click(function(){
      var parentClass=$(this).attr('rel');
@@ -68,13 +88,26 @@ $(document).ready(function() {
 	            $(this).addClass('error');
 	            $('.attention_block').show();
 
-				//$(".checkbox").prop('checked').hide('.button');
-
 
 	        }else{
 	            $(this).removeClass('error');
 	             $('.attention_block').hide();
 	        }
+
+	        if ($('#caphahide').hasClass('error')) {
+				$('#nocapha').show();
+			} 
+			else {
+				$('#nocapha').hide();
+			}
+
+			if ($('#caphahide2').hasClass('error')) {
+				$('#nocapha2').show();
+			} 
+			else {
+				$('#nocapha2').hide();
+			}
+
 	    });
 	    if(validate==1){
 	        $.ajax({
